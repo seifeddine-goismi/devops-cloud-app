@@ -1,0 +1,7 @@
+{
+  "name": "Seifeddine Goismi",
+  "role": "Cloud DevOps Engineer",
+  "cloud": ["AWS", "Azure", "GCP"],
+  "skills": ["Docker", "Terraform", "Kubernetes", "Git", "CI/CD"],
+  "status": "Learning DevOps Architecture"
+}

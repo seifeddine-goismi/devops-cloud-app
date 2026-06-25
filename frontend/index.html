@@ -1,71 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Seifeddine Cloud DevOps</title>
+  <meta charset="UTF-8">
+  <title>Seifeddine Goismi | Cloud & DevOps</title>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c92d2);
-      background-size: 400% 400%;
-      animation: gradient 10s ease infinite;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    h1 {
-      margin-top: 120px;
-      font-size: 50px;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    h2 {
-      color: #00ffcc;
-      animation: slide 3s ease-in-out;
-    }
-
-    .cloud {
-      width: 120px;
-      height: 120px;
-      background: white;
-      border-radius: 50%;
-      margin: 50px auto;
-      animation: float 4s infinite ease-in-out;
-      box-shadow: 0 0 30px #00ffcc;
-    }
-
-    @keyframes gradient {
-      0% {background-position:0% 50%}
-      50% {background-position:100% 50%}
-      100% {background-position:0% 50%}
-    }
-
-    @keyframes fadeIn {
-      from {opacity:0;}
-      to {opacity:1;}
-    }
-
-    @keyframes slide {
-      from {transform: translateY(50px); opacity:0;}
-      to {transform: translateY(0); opacity:1;}
-    }
-
-    @keyframes float {
-      0%,100% {transform: translateY(0);}
-      50% {transform: translateY(-40px);}
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <h1>☁️ Seifeddine Goismi</h1>
-  <h2>DevOps • Cloud Engineer • AWS • Azure • GCP</h2>
+<div id="particles"></div>
 
-  <div class="cloud"></div>
+<header>
+
+  <h1>Seifeddine Goismi</h1>
+
+  <p>
+    Cloud • DevOps • Docker • Terraform • AWS • Azure • GCP
+  </p>
+
+  <button id="deployBtn">
+    🚀 Deploy Infrastructure
+  </button>
+
+</header>
+
+<section class="cards">
+
+  <div class="card">
+    ☁️ AWS
+  </div>
+
+  <div class="card">
+    🔵 Azure
+  </div>
+
+  <div class="card">
+    🌐 GCP
+  </div>
+
+  <div class="card">
+    🐳 Docker
+  </div>
+
+  <div class="card">
+    ☸ Kubernetes
+  </div>
+
+  <div class="card">
+    ⚙ CI/CD
+  </div>
+
+</section>
+
+<section class="orange-zone">
+
+  <h2>Orange Inspired Cloud Operations</h2>
+
+  <p>
+    Automation • Monitoring • Infrastructure as Code
+  </p>
+
+</section>
+
+<section>
+
+  <h2>Mini Game</h2>
+
+  <p>
+    Click the Orange Cloud to collect points
+  </p>
+
+  <div id="cloud-game">
+    ☁️
+  </div>
+
+  <h3>
+    Score :
+    <span id="score">0</span>
+  </h3>
+
+</section>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
